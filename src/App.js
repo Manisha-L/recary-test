@@ -41,14 +41,6 @@ const App = () => {
         groupSelectsChildren={true}
         pagination={true}
         paginationAutoPageSize={true}
-        // autoGroupColumnDef={{
-        //   headerName: "Identification",
-        //   field: "Identification",
-        //   // cellRenderer: "agGroupCellRenderer",
-        //   cellRendererParams: {
-        //     checkbox: true,
-        //   },
-        // }}
       >
         <AgGridColumn
           field="Identification"
@@ -75,7 +67,6 @@ const App = () => {
         ></AgGridColumn>
         <AgGridColumn
           field="Photo"
-          // imageUrl="http://www.barclays.co.uk/branchImages/content/dam/branchfinder/bedfordshire/UK-B-20533008.jpg"
           sortable={true}
           filter={true}
           width="500"
