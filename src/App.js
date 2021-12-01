@@ -13,7 +13,7 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get("https://festive-kare-e03efc.netlify.app/")
+      .get("https://recary-node.herokuapp.com/")
       .then((rowData) => setRowData(rowData.data))
       .catch((err) => console.log(err));
   }, []);
