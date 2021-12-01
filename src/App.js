@@ -18,9 +18,9 @@ const App = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  const ImageFormatter = ({ value }) => {
-    return <img src={value} />;
-  };
+  // const ImageFormatter = ({ value }) => {
+  //   return <img src={value} />;
+  // };
 
   const onButtonClick = (e) => {
     const selectedNodes = gridRef.current.api.getSelectedNodes();
@@ -65,14 +65,14 @@ const App = () => {
           filter={true}
           checkboxSelection={true}
         ></AgGridColumn>
-        <AgGridColumn
+        {/* <AgGridColumn
           field="Photo"
           sortable={true}
           filter={true}
           width="500"
           checkboxSelection={true}
           cellRendererFramework={ImageFormatter}
-        ></AgGridColumn>
+        ></AgGridColumn> */}
       </AgGridReact>
     </div>
   );
