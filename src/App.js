@@ -13,7 +13,7 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/")
+      .get("https://festive-kare-e03efc.netlify.app/")
       .then((rowData) => setRowData(rowData.data))
       .catch((err) => console.log(err));
   }, []);
